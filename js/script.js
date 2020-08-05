@@ -30,13 +30,14 @@ class Cat{
     }
 }
 
-var ippo = new Cat(screenWidth/2,screenHeight/2,50,50);
+//implement later
+/* var ippo = new Cat(screenWidth/2,screenHeight/2,50,50);
 var catImages ={};
 
 var loadCatImages = function(){
     catImages.ippo = new Image();
     catImages.ippo.src = "img/cat_smoler2.png";
-}
+} */
 
 var draw = function(){
     ctx.clearRect(0,0,screenWidth,screenHeight);
@@ -59,14 +60,27 @@ var draw = function(){
 }
 
 //Collisison Section
+var spotted = function(userEyes, cat){
+    //gather shape paramerter
+    //detect where your red dot is
+    //return true;
+}
 
+//catching the eyes
+var update = function(){
+    if(spotted){
+        //html <h1>Meow!</h1>
+    }
+}
 
     //refresh step
 var step = function(){
+    update();
     draw();
-    if(isGameLive){
+
+/*     if(isGameLive){
         window.requestAnimationFrame(step);
-    }
+    } not needed yet*/
 }
 loadCatImages();
 draw();
