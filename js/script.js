@@ -7,8 +7,13 @@
     console.log(elapsedTime); //elapsed time is based on time since begin was called
 }).begin(); */
 
-webgazer.setGazeListener(function(data, elapsedTime) {
+webgazer
+.setGazeListener(function(data, elapsedTime) {
     var xprediction = data.x;
     var yprediction = data.y;
-    .showPreditionPoints(true);
-}).begin();
+}).setTracker("TFFacemesh")
+.showFaceFeedbackBox(true)
+.setRegression('weightedRidge')
+.showPredictionPoints(true)
+.begin();
+
