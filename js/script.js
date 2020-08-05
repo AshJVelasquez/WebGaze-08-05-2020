@@ -16,7 +16,7 @@ webgazer.setGazeListener(function(data, elapsedTime) {
 var canvas = document.getElementById("playArea");
 var ctx =canvas.getContext("2d");
 
-let screenWidth = 300;
+let screenWidth = 800;
 let screenHeight= 500;
 //var isGameLive = true;
 
@@ -57,6 +57,9 @@ var draw = function(){
         ctx.fillRect(150,150,50,50);
     //ctx.drawImage(catImages.ippo,ippo.x,ippo.y);
 }
+
+//Collisison Section
+
 
     //refresh step
 var step = function(){

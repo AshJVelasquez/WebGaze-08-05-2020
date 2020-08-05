@@ -2,8 +2,15 @@
     text-align: center;
 }
 
-canvas{
+#playArea{
     border: 2px solid black;
-    width:500px;
-    height:600px;
+    background-color: rgb(78, 184, 149);
+}
+
+ul{
+   margin:10px 30%;
+}
+
+li{
+    text-align: left;
 }
